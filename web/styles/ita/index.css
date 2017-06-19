@@ -1,0 +1,528 @@
+body{
+	color: #333 !important;
+	font-weight:windows!important;
+}
+.dropdown-menu{
+	font-size: inherit !important;
+}
+.main-header .navbar{
+	background-color:#78d4cf !important;
+}
+.main-header .logo{
+ background-color:#73c6d0 !important;
+  font-weight:bold;
+ text-shadow:4px 2px 2px #000000;
+ }
+.nav > li > a:hover, .nav > li > a:focus{
+  background-color:#E7F7F7 !important;
+ }
+.navbar-inverse .navbar-toggle:hover,.navbar-inverse .navbar-toggle:focus{
+  background-color:#E7F7F7;
+ }
+.navbar-inverse .navbar-nav > .open > a, .navbar-inverse .navbar-nav > .open > a:hover, .navbar-inverse .navbar-nav > .open > a:focus
+ {
+   background-color:#E7F7F7;
+ }
+.sidebar-menu .treeview a{
+	white-space: normal !important;
+}
+#demoChart {
+    height: 300px;
+    width: 900px;
+    margin: 0 auto;
+}
+#demoKendoUI {
+	height: 300px;
+	width: 900px;
+	margin : 0 auto;
+}
+#demoGauge {
+    height: 300px;
+    width: 900px;
+    margin: 0 auto;
+}
+#demoGauge1 {
+    width: 300px;
+    margin: 0 auto;
+}
+#demoGauge2{
+    width: 300px;
+    margin: 0 auto;
+
+}
+#demoGauge3{
+    width: 300px;
+    margin: 0 auto;
+
+}
+.dash-widget-item {
+  position: relative;
+  min-height: 185px;
+  margin-bottom: 30px;
+  box-shadow: 0 1px 1px rgba(0,0,0,.15);
+}
+.dash-widget-item .dash-widget-header {
+  position: relative;
+}
+.p-b-20 {
+  padding-bottom: 20px!important;
+}
+.p-t-20 {
+  padding-top: 20px!important;
+}
+.text-center {
+  text-align: center;
+}
+
+label {
+	margin-top:5px;
+}
+.child-dropdown-menu>li>a {
+	padding: 3px 20px !important;
+	line-height: 36px !important;
+	font-size: inherit !important;
+	font-weight: 400 !important;
+	color: #333 !important;
+}
+
+.child_navbar>li>a {
+	padding: 15px !important;
+	line-height: 20px !important;
+	color: #9d9d9d !important;
+	font-size: inherit !important;
+}
+
+.child_nav_right {
+	margin-right: 5px !important;
+	font-size: inherit !important;
+}
+
+.child-dropdown-menu>li>a:hover,.child-dropdown-menu>li>a:focus {
+	color: #262626 !important;
+	text-decoration: none !important;
+	background-color: #f5f5f5 !important;
+}
+
+ 
+.sidebar-menu .treeview a{
+ color:#333333;
+ }
+.sidebar-menu .treeview ul li a{
+padding-top:10px !important;
+padding-bottom:10px!important;
+}
+.tab-content-wrapper{
+  background:radial-gradient(ellipse,#f6f6c9,#f6f6e1,#ffffff 85%);
+  padding-top:0px !important;
+  padding-left:0px !important;
+  padding-right:0px !important;
+
+ }
+ 
+ /* panel    开始 */
+.button-menu {
+	background-color: #e0efd8;
+	min-height: 55px;
+	border: 1px solid #dddddd;
+}
+.col12{
+	background-color:#f6f6e1;
+	height:45px;
+	border:1px solid #dddddd;
+	margin:0 auto;
+    cursor: pointer;
+}
+.apply-write{
+	padding-left: 10px !important;
+	margin-top: 12px !important;
+	font-family: inherit !important;
+}
+ .panel-heading {
+	box-sizing: border-box;
+	background-color: #f6f6e1 !important;
+	height: 45px !important;
+	border: 1px solid #dddddd;
+	margin: 0 auto;
+	margin-top: 0px;
+}
+.panel-title {
+	line-height: 23px;
+	font-family: inherit !important;
+	font-size: inherit !important;
+}
+.tip-pull-right{
+	float:right;
+	border-radius:4px;
+	-moz-border-radius:4px;
+	-khtml-border-radius:4px;
+	-webkit-border-radius:4px;
+	color:#333333;
+}
+ /* panel    结束 */
+ 
+/*        基础页面-查询区页面样式：base.css   开始                       */ 
+body {
+	/*margin-top:-70px;*/
+	overflow-y: auto;
+	background: white;
+}
+.input-group-sm .input-group-addon {
+	height: 19px;
+	background-color: #fff !important;
+	border: 0;
+	color: #333333;
+	font-size: 15px;
+	font-weight: bold;
+}
+
+.input-group-sm .input-group-addon {
+	background-color: #f5f5f5 !important;
+}
+
+.form-group {
+	margin-bottom: 7px !important;
+	margin-left: 0px !important;
+	margin-right: 0px !important;
+}
+
+.col {
+	padding-right: 15px;
+}
+
+.queryArea {
+	border: 1px solid #dddddd !important;
+	height: auto !important;
+	width: 100% !important;
+	margin-top:0px;
+}
+
+.grouptitle {
+	 width: 100px;
+	 height: 25px;
+	 margin-left: 20px;
+	 margin-top: -10px;
+	 text-align: center;
+	 background-color: #ffffff;
+	 display: block;
+ }
+
+.myGroup {
+	padding-top: 0px;
+	padding-bottom: 5px;
+}
+/* .form-horizontal{
+	padding-top: 10px !important;
+} */
+
+.myGroup:before {
+	content: " ";
+	display: table;
+}
+
+.myGroup:after {
+	content: " ";
+	display: table;
+	clear: both;
+}
+/*                       新增按钮样式开始                                   */
+.upload-button {
+	width: 88%;
+	cursor: pointer;
+	background-color: #7db662 !important;
+	color: #ffffff !important;
+	font-size: inherit !important;
+	text-align: center;
+	display: inline-block;
+	text-decoration: none;
+}
+.upload-button:hover {
+	background-color: #72b352 !important;
+	color: #ffffff !important;
+}
+#needPlan {
+	width: 180px;
+	cursor: pointer;
+	background-color: #4a8cf7;
+	color: #ffffff;
+	font-size: inherit !important;
+	text-align: center;
+	text-decoration: none;
+}
+
+#relatedDprt,#assignDetail {
+	width: 180px;
+	background-color: #4a8cf7;
+	color: #ffffff;
+	font-size: inherit !important;
+	text-align: center;
+	display: inline-block;
+	text-decoration: none;
+}
+#needPlan:hover,#relatedDprt:hover,#assignDetail:hover {
+	background-color: #477dd4;
+}
+
+.form-control,.btn{
+	border-radius:4px;
+	-moz-border-radius:4px;
+	-khtml-border-radius:4px;
+	-webkit-border-radius:4px;
+	font-size: inherit !important;
+}
+
+#submitBtn,#submitBtn1{
+	width: 74px;
+	height: 21px;
+	color: #333333;
+	border: 1px solid #b7b7b7;
+	background-color: #ededed;
+}
+#submitBtn:hover,#submitBtn1:hover{
+	background-color: #cccccc;
+	color: #333333;
+}
+#searchBtn{
+	margin-right:0px !important;
+}
+.btn-primary{
+	background-color:#3071A9 !important;
+	color:#ffffff !important;
+}
+.pull-right,.btn{
+	border-radius:4px;
+	-moz-border-radius:4px;
+	-khtml-border-radius:4px;
+	-webkit-border-radius:4px;
+	background-color:#dcdcdc;
+	color:#333333;
+	font-size: inherit !important;
+}
+.k-button{
+	background-color:#dcdcdc !important;
+	color:#333333 !important;
+}
+.input-group-btn{
+	font-size: inherit !important;
+}
+/*                          新增按钮样式结束                                             */
+.gridArea {
+	padding-top: 10px;
+}
+
+.row {
+	margin-left: 0px !important;
+	margin-right: 0px !important;
+}
+
+.modal-header {
+	color: white;
+	background-color: #3071A9 !important;
+	border: 0px !important;
+	min-height: 0;
+	padding: 10px 15px;
+}
+
+.modal-title {
+	font-family: inherit !important;
+	font-size: inherit !important;
+}
+
+.modal-footer {
+	padding: 10px 15px;
+}
+
+.nav-tabs {
+	background-color: #f5f5f5 !important;
+}
+
+.child-col-sm-2 {
+	padding-right: 0px !important;
+	margin-bottom: 20px !important;
+}
+
+[disabled].form-control,[readonly].form-control,fieldset[disabled].form-control
+	{
+	background-color: #fafafa;
+}
+
+#projnameDetail {
+	background-color: #ffffff;
+}
+
+.form-control:hover {
+	border: 1px solid #66afe9;
+	box-shadow: 0 0 10px rgba(102, 175, 233, .3);
+}
+
+.form-control:focus {
+	border: 1px solid #66afe9;
+	box-shadow: 0 0 10px rgba(102, 175, 233, .3);
+}
+
+.myQuery {
+	border: 1px solid #dddddd;
+	padding-top: 10px;
+	background-color: #f5f5f5;
+}
+
+.myGrid {
+	margin-top: 10px;
+}
+
+.myBox {
+	border: 2px solid #78d4cf !important;
+	background-color: #f5f5f5 !important;
+}
+
+.app-main {
+	padding-top: 8px;
+}
+
+.myQuery {
+	border: 1px solid #dddddd;
+	padding-top: 10px;
+	background-color: #f5f5f5;
+}
+
+.myGrid {
+	margin-top: 10px;
+}
+
+.myBox {
+	border: 2px solid #78d4cf !important;
+	background-color: #f5f5f5 !important;
+}
+
+/* grid增加样式    开始 */
+
+.k-grid td{
+	padding-top:0.2em !important;
+	padding-bottom:0.2em !important;
+}
+/* grid增加样式    结束 */
+
+
+/* grid */
+
+/* grid调整    开始*/
+/* .k-header {
+	background-color: #dff0d8;
+}
+
+.k-pager-wrap {
+	background-color: #e4eef9;
+}
+.k-grid-content tr:hover,.k-grid-content td:hover {
+	background-color: #cfe8e7 !important;
+	color: #2e2e2e !important;
+}
+
+.k-state-selected,.k-state-selected:link,.k-state-selected:visited,.k-state-selected:hover,.k-list>.k-state-selected,.k-list>.k-state-highlight,.k-panel>.k-state-selected,.k-ghost-splitbar-vertical,.k-ghost-splitbar-horizontal,.k-draghandle
+	{
+	background-color: #99d4d1 !important;
+	border: 1px solid #c5c5c5 !important;
+}
+.k-alt,.k-separator,.k-alt.k-resource,.k-pivot-layout>tbody>:first-child>td:first-child
+	{
+	background-color: #d9edf7!impotrant;
+} */
+/* grid调整    结束 */
+
+#validerrmsg .alert {
+	margin-bottom: 20px;
+	border: 1px solid transparent;
+	border-radius: 4px;
+	-moz-border-radius:4px;
+	-khtml-border-radius:4px;
+	-webkit-border-radius:4px;
+	text-align: left;
+}
+
+#validerrmsg .alert-warning {
+	color: #8a6d3b;
+	background-color: #fcf8e3;
+	border-color: #faebcc;
+}
+
+#validerrmsg .close {
+	color: #ff3030;
+}
+
+input.form-control,select.form-control {
+	height: 31px;
+	padding: 5px 10px;
+}
+
+textarea.form-control {
+	padding: 5px 10px;
+}
+
+.col-xs-1,.col-xs-2,.col-xs-3,.col-xs-4,.col-xs-5,.col-xs-6,.col-xs-7,.col-xs-8,.col-xs-9,.col-xs-10,.col-xs-11,.col-xs-12
+	{
+	padding-left: 5px !important;
+	padding-right: 5px !important;
+}
+.k-grid .k-link,.k-grid a.k-button {
+	text-decoration: none !important;
+}
+
+.k-datepicker {
+	width: 100% !important;
+}
+.modal{
+	overflow: auto !important;
+}
+
+.modal-dialog.modal-md {
+	width: 750px;
+}
+
+.modal-first-div {
+	padding-top: 10px;
+}
+
+.col-xs-a {
+	position: relative;
+	min-height: 1px;
+	padding-right: 3px;
+	padding-left: 2px;
+	float: left;
+	width: 12%;
+}
+
+.normal-button {
+	width: 88%;
+	cursor: pointer;
+	background-color: #4a8cf7;
+	color: #ffffff;
+	font-size: 14px;
+	text-align: center;
+	display: inline-block;
+	text-decoration: none;
+}
+#projtype:hover,#checkopinion:hover,
+#projtype:focus,#checkopinion:focus{
+    border: 1px solid #66afe9;
+	box-shadow: 0 0 10px rgba(102, 175, 233, .3);
+}
+
+.autocomplete-layout{
+	display:none;
+	border: 1px solid #BCBCBC;
+	padding-left:5px;
+	background-color:#FFFFFF ;
+	line-height:17px;
+	width:96.5%;
+	position:absolute;
+	max-height:300px;
+	z-index:100 !important;
+	overflow: auto;
+}
+.ct{
+	background-color: #D2DEE8 !important;
+	padding: 4px 0px 4px 5px;
+}
+
+
+
+/*                       基础页面样式    结束                                                          */ 

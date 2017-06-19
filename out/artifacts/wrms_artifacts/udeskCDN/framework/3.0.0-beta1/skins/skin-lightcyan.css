@@ -1,0 +1,180 @@
+/*
+ * Skin: lightcyan
+ * ----------
+ */
+.search {
+  position: relative;
+}
+.search .input-search:focus,
+.search .input-search:hover {
+  border-color: #03b3b2;
+}
+.search .searchIcon:hover {
+  color: #03b3b2;
+}
+.devider {
+  background-color: #03b3b2;
+}
+.btn-theme {
+  color: #ffffff;
+  background-color: #03b3b2;
+  border-color: #039a99;
+}
+.btn-theme:focus,
+.btn-theme.focus {
+  color: #ffffff;
+  background-color: #028180;
+  border-color: #001d1c;
+}
+.btn-theme:hover {
+  color: #ffffff;
+  background-color: #028180;
+  border-color: #025e5d;
+}
+.btn-theme:active,
+.btn-theme.active,
+.open > .dropdown-toggle.btn-theme {
+  color: #ffffff;
+  background-color: #028180;
+  border-color: #025e5d;
+}
+.btn-theme:active:hover,
+.btn-theme.active:hover,
+.open > .dropdown-toggle.btn-theme:hover,
+.btn-theme:active:focus,
+.btn-theme.active:focus,
+.open > .dropdown-toggle.btn-theme:focus,
+.btn-theme:active.focus,
+.btn-theme.active.focus,
+.open > .dropdown-toggle.btn-theme.focus {
+  color: #ffffff;
+  background-color: #025e5d;
+  border-color: #001d1c;
+}
+.btn-theme:active,
+.btn-theme.active,
+.open > .dropdown-toggle.btn-theme {
+  background-image: none;
+}
+.btn-theme.disabled,
+.btn-theme[disabled],
+fieldset[disabled] .btn-theme,
+.btn-theme.disabled:hover,
+.btn-theme[disabled]:hover,
+fieldset[disabled] .btn-theme:hover,
+.btn-theme.disabled:focus,
+.btn-theme[disabled]:focus,
+fieldset[disabled] .btn-theme:focus,
+.btn-theme.disabled.focus,
+.btn-theme[disabled].focus,
+fieldset[disabled] .btn-theme.focus,
+.btn-theme.disabled:active,
+.btn-theme[disabled]:active,
+fieldset[disabled] .btn-theme:active,
+.btn-theme.disabled.active,
+.btn-theme[disabled].active,
+fieldset[disabled] .btn-theme.active {
+  background-color: #03b3b2;
+  border-color: #039a99;
+}
+.btn-theme .badge {
+  color: #03b3b2;
+  background-color: #ffffff;
+}
+.grid .k-pager-wrap .k-pager-numbers .k-state-selected {
+  color: #03b3b2;
+}
+.main-header .logo {
+  background-color: #026867;
+}
+.main-header .navbar {
+  background-color: #03b3b2;
+}
+.main-header .navbar .header-menu a:hover {
+  background: #039a99;
+}
+.navbar .menu .k-state-active {
+  background-color: #039a99;
+}
+.navbar .menu .k-group {
+  border-color: #03b3b2;
+}
+.navbar .menu .k-first .k-state-active .k-icon {
+  color: #039a99;
+}
+.navbar .menu .k-first .k-icon {
+  color: #03b3b2;
+}
+.navbar .menu .k-first .k-icon:hover {
+  color: #039a99;
+}
+.navbar .menu a:hover .k-icon {
+  color: #039a99;
+}
+.grid .text-unread {
+  color: #03b3b2;
+  font-weight: bold;
+}
+.grid .text-unread:hover {
+  color: #04e5e4;
+}
+.grid td a:hover {
+  color: #04e5e4;
+}
+.slender-tabstrip .k-tabstrip-items .k-item.k-state-active {
+  border-bottom: 5px solid #03b3b2;
+}
+.dragbox-column .dragbox .dragbox-heading {
+  border-top-color: #03b3b2;
+}
+.dragbox-column .dragbox .dragbox-heading a:hover {
+  color: #03b3b2;
+}
+.sidebar-menu .treeview.active > a {
+  color: #03b3b2;
+  border-left: 5px solid #03b3b2;
+}
+/* 2015.05.17 udesk by 刘家杰 */
+/*一级菜单项*/
+.sidebar-menu .treeview a {
+  /* 2015.05.17 udesk by 刘家杰 */
+  border-left: 5px solid #ffffff;
+
+}
+/*展开的二级菜单项*/
+.sidebar-menu .treeview > .treeview-menu > .active > a {
+  color: #03b3b2;
+  border-left: 5px solid #03b3b2;
+}
+/*展开的三级菜单项*/
+.sidebar-menu .treeview > .treeview-menu > li > .treeview-menu > li.active > a{
+  color: #03b3b2;
+  border-left: 5px solid #03b3b2;
+}
+/*展开的四级菜单项*/
+.sidebar-menu .treeview > .treeview-menu > li > .treeview-menu > li > .treeview-menu > li.active > a{
+  color: #03b3b2;
+  border-left: 5px solid #03b3b2;
+}
+/*展开的五级菜单项及其后代*/
+.sidebar-menu .treeview > .treeview-menu > li > .treeview-menu > li > .treeview-menu > li > .treeview-menu li.active > a{
+  color: #03b3b2;
+  border-left: 5px solid #03b3b2;
+  /*background-color: #f9f9f9;*/
+}
+/*未打开的所有菜单项，鼠标滑过*/
+.sidebar-menu .treeview:not(.active) > a:hover, .sidebar-menu .treeview li:not(.active) > a:hover {
+  color: #03b3b2;      
+  border-left: 5px solid #03b3b2;
+}
+
+.msgCenter .anchor {
+  border: 1px solid #828585;
+}
+.msgCenter .anchor a:hover,
+.msgCenter .anchor a.active {
+  color: #03b3b2;
+}
+.tabsite li .tab-close:hover {
+  color: #03b3b2;
+}

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans
+        xmlns="http://www.springframework.org/schema/beans"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xmlns:tx="http://www.springframework.org/schema/tx"
+        xmlns:context="http://www.springframework.org/schema/context"
+        xmlns:mvc="http://www.springframework.org/schema/mvc"
+        xsi:schemaLocation="http://www.springframework.org/schema/beans
+	http://www.springframework.org/schema/beans/spring-beans-3.0.xsd 
+	http://www.springframework.org/schema/tx 
+	http://www.springframework.org/schema/tx/spring-tx-3.0.xsd
+	http://www.springframework.org/schema/context
+    http://www.springframework.org/schema/context/spring-context-3.0.xsd
+	http://www.springframework.org/schema/mvc
+    http://www.springframework.org/schema/mvc/spring-mvc-3.0.xsd">
+    <!--
+    &lt;!&ndash; HandlerMapping &ndash;&gt;
+    <bean class="org.springframework.web.servlet.handler.BeanNameUrlHandlerMapping"/>
+    &lt;!&ndash; HandlerAdapter &ndash;&gt;
+    <bean class="org.springframework.web.servlet.mvc.SimpleControllerHandlerAdapter"/>
+    &lt;!&ndash; 处理器 添加到Spring配置文件(WEB-INF/chapter2-servlet.xml)，让其接受Spring IoC容器管理&ndash;&gt;
+    <bean name="/user" class="com.app.controller.UserController"/>
+    -->
+    <!-- 自动扫描的包名 -->
+    <context:component-scan base-package="com.app,com.core,com.test" ></context:component-scan>
+
+    <!-- 默认的注解映射的支持 -->
+    <mvc:annotation-driven />
+
+    <!-- ViewResolver 视图解释类
+    <bean id="viewResolver" class="org.springframework.web.servlet.view.UrlBasedViewResolver">
+        <property name="order" value="1" />
+        <property name="viewClass" value="org.springframework.web.servlet.view.tiles2.TilesView" />
+    </bean>
+    <bean id="tilesConfigurer" class="org.springframework.web.servlet.view.tiles2.TilesConfigurer">
+        <property name="definitions">
+            <list>
+                <value>/WEB-INF/tiles.xml</value>
+            </list>
+        </property>
+    </bean>
+     -->
+    <bean class="org.springframework.web.servlet.view.InternalResourceViewResolver">
+        <!--查找视图页面的前缀和后缀（前缀[逻辑视图名]后缀），比如传进来的逻辑视图名为hello，则该该jsp视图页面应该存放在“WEB-INF/jsp/hello.jsp-->
+        <property name="order" value="2" />
+        <property name="viewClass" value="org.springframework.web.servlet.view.JstlView" /><!--JstlView表示JSP模板页面需要使用JSTL标签库，classpath中必须包含jstl的相关jar包-->
+        <property name="prefix" value="/WEB-INF/views/"/>
+        <property name="suffix" value=".jsp"/><!--可为空,方便实现自已的依据扩展名来选择视图解释类的逻辑  -->
+    </bean>
+
+
+    <!-- 拦截器
+    <mvc:interceptors>
+        <bean class="com.core.mvc.MyInteceptor" />
+    </mvc:interceptors>
+    -->
+    <!-- 对静态资源文件的访问  方案一 （二选一） -->
+    <mvc:default-servlet-handler/>
+
+    <!-- 对静态资源文件的访问  方案二 （二选一）
+    <mvc:resources mapping="/images/**" location="/images/" cache-period="31556926"/>
+    <mvc:resources mapping="/js/**" location="/js/" cache-period="31556926"/>
+    <mvc:resources mapping="/css/**" location="/css/" cache-period="31556926"/>
+    -->
+
+
+
+</beans> 

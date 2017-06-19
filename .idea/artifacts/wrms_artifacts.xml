@@ -1,0 +1,22 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" name="wrms_artifacts">
+    <output-path>$PROJECT_DIR$/out/artifacts/wrms_artifacts</output-path>
+    <root id="root">
+      <element id="directory" name="static">
+        <element id="dir-copy" path="$PROJECT_DIR$/web/static" />
+      </element>
+      <element id="javaee-facet-resources" facet="wrms/web/Web" />
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="wrms" />
+        </element>
+        <element id="directory" name="lib">
+          <element id="library" level="project" name="wxms_lib" />
+          <element id="library" level="project" name="com.alibaba:fastjson:1.2.31" />
+        </element>
+      </element>
+      <element id="file-copy" path="$PROJECT_DIR$/web/index.jsp" />
+      <element id="file-copy" path="$PROJECT_DIR$/web/test.html" />
+    </root>
+  </artifact>
+</component>

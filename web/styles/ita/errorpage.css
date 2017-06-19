@@ -1,0 +1,99 @@
+	html {
+		height : 100%;
+		widht : 100%;
+		background: url(/ita/images/erroricon/errorbj.png) repeat;
+		overflow : hidden;
+	}
+	body {
+		margin : 0px auto;
+		text-align : center;
+	}
+	.cw404 {
+	    width:100%;
+		/* width : 755px; */
+		margin : 0px auto;
+		margin-top : 20px;
+	}
+	.cw404_nr {
+		width:100%;
+		height:70%;
+		background-color:#78d4cf;
+		margin:30px auto 0;
+		display:table;
+		position: static; 
+		top:50%;
+	}
+	.top_left {
+		float : left; 
+		height : 150px;
+		width : 150px;
+	}
+	.nr_top {
+		font-size : 25px; 
+		line-height : 70px; 
+		height : 70px; 
+		margin-right : 5px; 
+		margin-left : 5px; 
+		/* border-bottom : 1px solid #aaaaaa;  */
+		text-align : center; 
+		font-weight : bold; 
+		color : #555555;
+	}
+	.nr_min {
+		height : 400px; 		
+		margin-right : 5px; 
+		margin-left : 5px;
+		width:64%;
+		margin-left:auto;
+		margin-right:auto;
+		margin-top:2%;
+	}
+	.min_top {
+		font-size : 20px;
+		font-weight:bold;
+		line-height : 50px;
+		height : 40px;
+		font-family : arial;
+		color : #cc6600;
+		text-align : left;
+		text-shadow:1px 2px 2px #b3b3b3;
+	}
+	.min_panel {
+		max-height :250px; 
+		overflow-y : scroll; 
+		overflow-x : hidden;
+		border-top : 1px solid #aaaaaa;
+		border-left : 1px solid #aaaaaa;
+		border-right : 1px solid #aaaaaa;
+		border-bottom : 1px solid #aaaaaa;
+		background : #f0ffff;
+		text-align : left;
+	}
+	.min_panel_top {
+		max-height : 70px; 
+		overflow-y : scroll; 
+		overflow-x : hidden;
+		border-top : 1px solid #aaaaaa;
+		border-left : 1px solid #aaaaaa;
+		border-right : 1px solid #aaaaaa;
+		border-bottom : 1px solid #aaaaaa;
+		background : #f0ffff;
+		text-align : left;
+	}
+	.min_li {
+		font-size : 15px;
+		line-height : 40px;
+		height : 30px;
+		font-family : Microsoft Yahei;
+		text-align : left;
+	}
+	.panel-body{
+	   padding-bottom:10px !important;
+	}
+	#returnHistoryBtn1{
+    width: 100px;
+	height: 35px;
+	color: #333333;
+	border: 1px solid #b7b7b7;
+	background-color: #ededed;
+  }

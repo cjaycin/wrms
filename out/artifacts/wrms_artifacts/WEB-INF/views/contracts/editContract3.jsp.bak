@@ -1,0 +1,211 @@
+<%--
+  Created by IntelliJ IDEA.
+  User: cjay
+  Date: 2017/6/9
+  Time: 15:58
+  To change this template use File | Settings | File Templates.
+--%>
+<%@include file="/WEB-INF/views/base/header.jsp"%>
+<%@ page contentType="text/html; charset=UTF-8" language="java" %>
+<div class="container">
+  <div class="queryArea">
+    <div class="grouptitle">
+      <span style="margin-top:-5px; font-weight: bold; font-size: larger">基本信息</span>
+    </div>
+    <form class="form-horizontal" id="basicInfoForm" method="post">
+      <div class="form-group">
+        <div class="col-sm-6">
+          <input type="text" class="form-control" id="name" name="name" placeholder="用户名">
+        </div>
+        <div class="col-sm-6">
+          <input type="text" class="form-control" id="phone" name="mobile" placeholder="联系方式">
+        </div>
+      </div>
+      <div class="form-group">
+        <div class="col-sm-12">
+          <input type="text" class="form-control" id="address" name="address" placeholder="联系地址">
+        </div>
+      </div>
+      <div class="form-group">
+        <div class="col-sm-6">
+          <label>选择日期：</label>
+          <!--指定 date标记-->
+          <div class='input-group date' id='datetimepicker1'>
+            <input type='text' class="form-control" name="date1"/>
+                <span class="input-group-addon">
+                    <span class="glyphicon glyphicon-calendar"></span>
+                </span>
+          </div>
+        </div>
+        <div class="col-sm-6">
+          <label>选择日期：</label>
+          <!--指定 date标记-->
+          <div class='input-group date' id='datetimepicker2'>
+            <input type='text' class="form-control" name="date2"/>
+                <span class="input-group-addon">
+                    <span class="glyphicon glyphicon-calendar"></span>
+                </span>
+          </div>
+        </div>
+      </div>
+        
+    </form>
+    <div id="basicInfo_area"></div>
+  </div>
+    <div class="queryArea" style="margin-top: 15px">
+        <div class="grouptitle">
+            <span style="margin-top:-5px; font-weight: bold; font-size: larger">操作</span>
+        </div>
+        <div>
+            <button type="button" class="btn btn-success" id="btnSaveBasicInfo">保存基本信息</button>
+            <button type="button" class="btn btn-info" data-toggle="modal" data-target="#addProjectModal">添加产品</button>
+        </div>
+
+    </div>
+  <div class="queryArea" style="margin-top: 15px">
+    <div class="grouptitle">
+      <span style="margin-top:-5px; font-weight: bold; font-size: larger">产品明细</span>
+    </div>
+      <div id="product_detail">
+
+      </div>
+
+  </div>
+</div>
+<%@include file="addProductDlg.jsp"%>
+<%@include file="/WEB-INF/views/base/footer.jsp"%>
+
+<script type="text/javascript">
+  $(function () {
+    $('#datetimepicker1').datetimepicker({
+      format: 'YYYY-MM-DD',
+      locale: moment.locale('zh-cn')
+    });
+    $('#datetimepicker2').datetimepicker({
+      format: 'YYYY-MM-DD',
+      locale: moment.locale('zh-cn')
+    });
+    bindNewGrid();
+    bindNewGrid();
+    bindNewGrid();
+    $("#add_project").click(function(){
+      $("#contractInfo_area").append('<div class="gridArea"><div class="row"></div></div>');
+    });
+      validateForm();
+      /*$('#btnSaveBasicInfo').click(function(){
+
+      })*/
+  });
+
+  function validateForm(){
+      $('#basicInfoForm').bootstrapValidator({
+          message: 'This value is not valid',
+          feedbackIcons: {
+              valid: 'glyphicon glyphicon-ok',
+              invalid: 'glyphicon glyphicon-remove',
+              validating: 'glyphicon glyphicon-refresh'
+          },
+          fields: {
+              name: {
+                  message: '客户姓名验证失败',
+                  validators: {
+                      notEmpty: {
+                          message: '客户姓名不能为空'
+                      }
+                  }
+              },
+              mobile: {
+                  validators: {
+                      notEmpty: {
+                          message: '联系方式不能为空'
+                      }
+                  }
+              },
+              address: {
+                  validators: {
+                      notEmpty: {
+                          message: '联系地址不能为空'
+                      }
+                  }
+              },
+              date1: {
+                  validators: {
+                      notEmpty: {
+                          message: '日期不能为空'
+                      },
+                      date: {
+                          message: '日期格式不合法'
+                      }
+                  }
+              },
+              date2: {
+                  validators: {
+                      notEmpty: {
+                          message: '日期不能为空'
+                      },
+                      date: {
+                          message: '日期格式不合法'
+                      }
+                  }
+              }
+          },
+          submitHandler: function (validator, form, submitButton) {
+              $.ajax({
+                  type:"POST",
+                  url:"/contract/saveBasicInfo",
+                  data: form.serialize(),
+                  dataType: "json",
+                  success: function(result) {
+                      window.location.reload();
+                  },
+                  error: function(result) {
+//                options.error(result);
+                  }
+              });
+          }
+      });
+  }
+
+  function bindNewGrid(){
+      var html = '<table class="table table-striped table-bordered table-condensed table-hover">'+
+              '<caption>衣柜：1990元</caption>'+
+              '<thead>'+
+              '<tr>'+
+//              '<th>ID</th>'+
+              '<th width="30%">名称</th>'+
+              '<th width="15%">单价</th>'+
+              '<th width="15%">数量</th>'+
+              '<th width="20%">总价</th>'+
+              '<th>操作</th>'+
+              '</tr>'+
+              '</thead>'+
+              '<tbody>';
+      $.ajax({
+          type:"POST",
+          url:"/contract/listItemsByPid?pid=35",
+//          data: $("#searchMeetingForm").serialize() + "&page=" + options.data.page + "&pageSize=" + options.data.pageSize,
+          dataType: "json",
+          success: function(result) {
+              if(result != undefined){
+                  $.each(result, function(index, product) {
+                      html += '<tr>' +
+//                                '<td>' + product.id + '</td>' +
+                                '<td>' + product.item_name + '</td>' +
+                                '<td>' + product.item_price + '</td>' +
+                                '<td>' + product.item_count + '</td>' +
+                                '<td>' + product.item_total + '</td>' +
+                                '<td id="'+product.id+'"><button type="button" class="btn btn-info" data-toggle="modal" data-target="#myModal">修改</button>&nbsp;<button type="button" class="btn btn-danger">删除</button></td>' +
+                              '</tr>';
+                  });
+                  html += '</tbody>';
+                  $('#product_detail').append(html);
+              }
+          },
+          error: function(result) {
+//                options.error(result);
+          }
+      });
+  }
+
+
+</script>

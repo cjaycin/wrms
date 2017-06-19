@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding">
+    <file url="file://$PROJECT_DIR$/web/WEB-INF/views/base" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/web/WEB-INF/views/customer/listCustomers.jsp" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/web/WEB-INF/views/user" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/web/components" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/web/components/bootstrap-datetimepicker-master/css/bootstrap-datetimepicker-standalone.css" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/web/components/bootstrap-datetimepicker-master/css/bootstrap-datetimepicker.css" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/web/components/bootstrap-datetimepicker-master/css/bootstrap-datetimepicker.min.css" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/web/components/bootstrap-datetimepicker-master/js/bootstrap-datetimepicker.min.js" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/web/components/bootstrap-datetimepicker-master/js/moment-with-locales.min.js" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/web/components/bootstrap-validator/css/bootstrapValidator.min.css" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/web/components/bootstrap-validator/js/bootstrapValidator.min.js" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/web/scripts" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/web/styles" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/web/udeskCDN" charset="UTF-8" />
+    <file url="PROJECT" charset="GBK" />
+  </component>
+</project>

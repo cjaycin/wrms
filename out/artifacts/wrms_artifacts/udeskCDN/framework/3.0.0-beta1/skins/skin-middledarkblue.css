@@ -1,0 +1,146 @@
+/*
+ * Skin: middledarkblue
+ * ----------
+ */
+.search {
+  position: relative;
+}
+.search .input-search:focus,
+.search .input-search:hover {
+  border-color: #004b8b;
+}
+.search .searchIcon:hover {
+  color: #004b8b;
+}
+.devider {
+  background-color: #004b8b;
+}
+.btn-theme {
+  color: #ffffff;
+  background-color: #004b8b;
+  border-color: #003d72;
+}
+.btn-theme:focus,
+.btn-theme.focus {
+  color: #ffffff;
+  background-color: #002f58;
+  border-color: #000000;
+}
+.btn-theme:hover {
+  color: #ffffff;
+  background-color: #002f58;
+  border-color: #001c34;
+}
+.btn-theme:active,
+.btn-theme.active,
+.open > .dropdown-toggle.btn-theme {
+  color: #ffffff;
+  background-color: #002f58;
+  border-color: #001c34;
+}
+.btn-theme:active:hover,
+.btn-theme.active:hover,
+.open > .dropdown-toggle.btn-theme:hover,
+.btn-theme:active:focus,
+.btn-theme.active:focus,
+.open > .dropdown-toggle.btn-theme:focus,
+.btn-theme:active.focus,
+.btn-theme.active.focus,
+.open > .dropdown-toggle.btn-theme.focus {
+  color: #ffffff;
+  background-color: #001c34;
+  border-color: #000000;
+}
+.btn-theme:active,
+.btn-theme.active,
+.open > .dropdown-toggle.btn-theme {
+  background-image: none;
+}
+.btn-theme.disabled,
+.btn-theme[disabled],
+fieldset[disabled] .btn-theme,
+.btn-theme.disabled:hover,
+.btn-theme[disabled]:hover,
+fieldset[disabled] .btn-theme:hover,
+.btn-theme.disabled:focus,
+.btn-theme[disabled]:focus,
+fieldset[disabled] .btn-theme:focus,
+.btn-theme.disabled.focus,
+.btn-theme[disabled].focus,
+fieldset[disabled] .btn-theme.focus,
+.btn-theme.disabled:active,
+.btn-theme[disabled]:active,
+fieldset[disabled] .btn-theme:active,
+.btn-theme.disabled.active,
+.btn-theme[disabled].active,
+fieldset[disabled] .btn-theme.active {
+  background-color: #004b8b;
+  border-color: #003d72;
+}
+.btn-theme .badge {
+  color: #004b8b;
+  background-color: #ffffff;
+}
+.grid .k-pager-wrap .k-pager-numbers .k-state-selected {
+  color: #004b8b;
+}
+.main-header .logo {
+  background-color: #00223e;
+}
+.main-header .navbar {
+  background-color: #004b8b;
+}
+.main-header .navbar .header-menu a:hover {
+  background: #003d72;
+}
+.navbar .menu .k-state-active {
+  background-color: #003d72;
+}
+.navbar .menu .k-group {
+  border-color: #004b8b;
+}
+.navbar .menu .k-first .k-state-active .k-icon {
+  color: #003d72;
+}
+.navbar .menu .k-first .k-icon {
+  color: #004b8b;
+}
+.navbar .menu .k-first .k-icon:hover {
+  color: #003d72;
+}
+.navbar .menu a:hover .k-icon {
+  color: #003d72;
+}
+.grid .text-unread {
+  color: #004b8b;
+  font-weight: bold;
+}
+.grid .text-unread:hover {
+  color: #0067be;
+}
+.grid td a:hover {
+  color: #0067be;
+}
+.slender-tabstrip .k-tabstrip-items .k-item.k-state-active {
+  border-bottom: 5px solid #004b8b;
+}
+.dragbox-column .dragbox .dragbox-heading {
+  border-top-color: #004b8b;
+}
+.dragbox-column .dragbox .dragbox-heading a:hover {
+  color: #004b8b;
+}
+.sidebar-menu .treeview.active > a {
+  color: #004b8b;
+  border-left: 5px solid #004b8b;
+}
+.msgCenter .anchor {
+  border: 1px solid #828585;
+}
+.msgCenter .anchor a:hover,
+.msgCenter .anchor a.active {
+  color: #004b8b;
+}
+.tabsite li .tab-close:hover {
+  color: #004b8b;
+}

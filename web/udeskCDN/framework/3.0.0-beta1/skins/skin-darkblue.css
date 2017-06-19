@@ -1,0 +1,146 @@
+/*
+ * Skin: darkblue
+ * ----------
+ */
+.search {
+  position: relative;
+}
+.search .input-search:focus,
+.search .input-search:hover {
+  border-color: #001940;
+}
+.search .searchIcon:hover {
+  color: #001940;
+}
+.devider {
+  background-color: #001940;
+}
+.btn-theme {
+  color: #ffffff;
+  background-color: #001940;
+  border-color: #000f27;
+}
+.btn-theme:focus,
+.btn-theme.focus {
+  color: #ffffff;
+  background-color: #00050d;
+  border-color: #000000;
+}
+.btn-theme:hover {
+  color: #ffffff;
+  background-color: #00050d;
+  border-color: #000000;
+}
+.btn-theme:active,
+.btn-theme.active,
+.open > .dropdown-toggle.btn-theme {
+  color: #ffffff;
+  background-color: #00050d;
+  border-color: #000000;
+}
+.btn-theme:active:hover,
+.btn-theme.active:hover,
+.open > .dropdown-toggle.btn-theme:hover,
+.btn-theme:active:focus,
+.btn-theme.active:focus,
+.open > .dropdown-toggle.btn-theme:focus,
+.btn-theme:active.focus,
+.btn-theme.active.focus,
+.open > .dropdown-toggle.btn-theme.focus {
+  color: #ffffff;
+  background-color: #000000;
+  border-color: #000000;
+}
+.btn-theme:active,
+.btn-theme.active,
+.open > .dropdown-toggle.btn-theme {
+  background-image: none;
+}
+.btn-theme.disabled,
+.btn-theme[disabled],
+fieldset[disabled] .btn-theme,
+.btn-theme.disabled:hover,
+.btn-theme[disabled]:hover,
+fieldset[disabled] .btn-theme:hover,
+.btn-theme.disabled:focus,
+.btn-theme[disabled]:focus,
+fieldset[disabled] .btn-theme:focus,
+.btn-theme.disabled.focus,
+.btn-theme[disabled].focus,
+fieldset[disabled] .btn-theme.focus,
+.btn-theme.disabled:active,
+.btn-theme[disabled]:active,
+fieldset[disabled] .btn-theme:active,
+.btn-theme.disabled.active,
+.btn-theme[disabled].active,
+fieldset[disabled] .btn-theme.active {
+  background-color: #001940;
+  border-color: #000f27;
+}
+.btn-theme .badge {
+  color: #001940;
+  background-color: #ffffff;
+}
+.grid .k-pager-wrap .k-pager-numbers .k-state-selected {
+  color: #001940;
+}
+.main-header .logo {
+  background-color: #000000;
+}
+.main-header .navbar {
+  background-color: #001940;
+}
+.main-header .navbar .header-menu a:hover {
+  background: #000f27;
+}
+.navbar .menu .k-state-active {
+  background-color: #000f27;
+}
+.navbar .menu .k-group {
+  border-color: #001940;
+}
+.navbar .menu .k-first .k-state-active .k-icon {
+  color: #000f27;
+}
+.navbar .menu .k-first .k-icon {
+  color: #001940;
+}
+.navbar .menu .k-first .k-icon:hover {
+  color: #000f27;
+}
+.navbar .menu a:hover .k-icon {
+  color: #000f27;
+}
+.grid .text-unread {
+  color: #001940;
+  font-weight: bold;
+}
+.grid .text-unread:hover {
+  color: #002d73;
+}
+.grid td a:hover {
+  color: #002d73;
+}
+.slender-tabstrip .k-tabstrip-items .k-item.k-state-active {
+  border-bottom: 5px solid #001940;
+}
+.dragbox-column .dragbox .dragbox-heading {
+  border-top-color: #001940;
+}
+.dragbox-column .dragbox .dragbox-heading a:hover {
+  color: #001940;
+}
+.sidebar-menu .treeview.active > a {
+  color: #001940;
+  border-left: 5px solid #001940;
+}
+.msgCenter .anchor {
+  border: 1px solid #828585;
+}
+.msgCenter .anchor a:hover,
+.msgCenter .anchor a.active {
+  color: #001940;
+}
+.tabsite li .tab-close:hover {
+  color: #001940;
+}

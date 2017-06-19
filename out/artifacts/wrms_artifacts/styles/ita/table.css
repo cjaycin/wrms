@@ -1,0 +1,35 @@
+ .table-table {
+ table-layout:fixed;
+ word-break:break-all;
+ }
+.table-header{
+ background-color:#ededed;
+ text-align:center;
+ word-break:break-all;
+ }
+ .table-row {
+ text-align:left;
+ word-break:break-all;
+ }
+ .label-yuan{
+/*  text-overflow:ellipsis;
+ overflow:hidden; */
+ }
+ .label-yuan:hover{
+/*  text-overflow:inherit;
+ white-space:pre-line;
+ overflow:visible; */
+ }
+ .font-thin{
+ font-weight:normal;
+ text-align:left;
+ }
+ .font-heavy{
+ font-weight:bold;
+ text-align:left;
+ }
+table{
+	font-size:inherit !important;
+}
+
+ 

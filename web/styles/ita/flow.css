@@ -1,0 +1,312 @@
+#content13 {
+	height: auto;
+	border: 1px solid #dddddd;
+	margin: 0 auto;
+}
+/* .form-group {
+	padding-left: 10px;
+}  */
+ .text-right {  
+	width: 22%;
+} 
+#productName {
+	background-color: #dedede;
+}
+
+#inPlan,#busiArea,#serviceType,#productDomain,#isNewProduct,#isMultiNeed,#needIsFinished,#isBusiDprtRelated,#costAssign
+	{
+	border: solid 1px #cccccc;
+	background: #ffffff no-repeat 125px center;
+}
+
+#class1,#class2,#checkopinion{
+	color:#333333 !important;
+	width: 48% !important;
+	border: solid 1px #cccccc;
+	background-color: #ffffff !important;
+}
+#class1:hover,#class2:hover,#inPlan:hover,#busiArea:hover,#serviceType:hover,#productDomain:hover,#isNewProduct:hover,#isMultiNeed:hover,#needIsFinished:hover,#isBusiDprtRelated:hover,#costAssign:hover,#onlineDate:hover,#startReq:hover,#endReq:hover
+	{
+	border: 1px solid #66afe9;
+	box-shadow: 0 0 10px rgba(102, 175, 233, .3);
+}
+
+#onlineDate:focus,#startReq:focus,#endReq:focus {
+	border: 1px solid #66afe9;
+	box-shadow: 0 0 10px rgba(102, 175, 233, .3);
+}
+
+#orgSelector {
+	background-color: #ededed;
+}
+
+/* #projectName:hover,#busiManager:hover,#orgSelector:hover,#productName:hover */
+.form-control:hover {
+	border: 1px solid #66afe9;
+	box-shadow: 0 0 10px rgba(102, 175, 233, .3);
+}
+label {
+	text-align: right;
+}
+
+/* #projectName:focus,#busiManager:focus,#orgSelector:focus,#productName:focus */
+.form-control:focus {
+	border: 1px solid #66afe9;
+	box-shadow: 0 0 10px rgba(102, 175, 233, .3);
+}
+
+/* #submitBtn,#submitBtn1{
+	width: 74px;
+	height: 21px;
+	font-size: 14px;
+	color: #ffffff;
+	border: 1px solid #b7b7b7;
+	background-color: #85A1DB;
+}
+#submitBtn:hover,#submitBtn1:hover{
+	background-color: #577ed2;
+	color: #ffffff;
+} */
+
+#returnBtn1,#returnBtn2,#removeProBtn,#returnPrePageBtn,#transferBtn3,#transferBtn,#submitBtn2,#closeTabBtn,#viewProcedure,#notice,#transferDeal,#evenMoreBtn,#returnHistoryBtn
+	{
+	width: 74px;
+	height: 21px;
+	color: #333333;
+	border: 1px solid #b7b7b7;
+	background-color: #ededed;
+}
+
+.btnWidth-sm{
+	width: 80px !important;
+}
+
+.btnWidth-nm{
+	width: 100px !important;
+}
+
+.btnWidth-lg{
+	width: 120px !important;
+}
+
+#returnHistoryBtn:hover,#returnBtn2:hover,#submitBtn2:hover,#returnBtn:hover,
+#removeProBtn:hover,#returnPrePageBtn:hover,#transferBtn3:hover,#transferBtn:hover,
+#returnBtn1:hover,#closeTabBtn:hover,#viewProcedure:hover,#notice:hover,#transferDeal:hover,#evenMoreBtn:hover
+	{
+	background-color: #cccccc;
+	color: #333333;
+}
+
+ul,li {
+	list-style-type: none;
+	padding: 0px;
+	margin: 0px;
+}
+
+#nav li a {
+	display: block;
+	text-align: center;
+	margin: 0 auto;
+	text-decoration: none;
+	color: #333333;
+	border: 1px solid #b7b7b7;
+	background-color: #ededed;
+	height: 35px;
+	line-height: 35px;
+	overflow: hidden;
+	border-radius: 4px;
+}
+
+#nav li a:hover {
+	display: block;
+	text-align: center;
+	text-decoration: none;
+	color: #333333;
+	background-color: #cccccc;
+}
+
+#nav li {
+	position: relative;
+	z-index: 200;
+	width: 100px;
+	background-color: #ffffff;
+	margin-bottom: 2px;
+	float: left;
+	margin-right: 5px;
+}
+
+#nav li ul {
+	position: absolute;
+	/*left:10px; */
+	top: 20px;
+	display: none;
+	width: 100px;
+}
+
+#nav li:hover ul {
+	display: block;
+	padding-top: 18px;
+}
+ .col-xs-3-right {
+	text-align: right !important;
+	color: #333333;
+	font-family: "寰蒋闆呴粦";
+}
+
+.col-xs-3-left {
+	text-align: left !important;
+	color: #333333;
+	font-family: "寰蒋闆呴粦";
+} 
+.class-select{
+  width:100%;
+  height:32px;
+  border:solid 1px #cccccc;
+  appearance:none;
+  -moz-appearance:none;
+  -webkit-appearance:none;
+  line-height:32px;
+  text-aline:center;
+  background:#ffffff no-repeat 125px center;
+  text-indent:10px;  
+ }
+ 
+ 
+ /* /ita-app/src/webapp/WEB-INF/pages/base/ztrace.jsp */
+ /* 寮�濮� */
+ .processed{
+		position:absolute;		
+	}
+	.traceTitleGreen{
+		position:absolute;
+		border:0px solid green;
+		background:green;
+	}
+	.traceTitleBlue{
+		position:absolute;
+		border:0px solid blue;
+		background:blue;
+	}
+	.traceTitleGray{
+		position:absolute;
+		border:0px solid gray;
+		background:gray;
+	}
+	.traceTitleRed{
+		position:absolute;
+		border:0px solid red;
+		background:red;
+	}	
+	.traceTitleYellow{
+		position:absolute;
+		border:0px solid yellow;
+		background:yellow;
+	}
+	.traceLineGreen{
+		position:absolute;
+		border:3px solid green;
+		background:transparent;
+	}
+	.traceLineBlue{
+		position:absolute;
+		border:3px solid blue;
+		background:transparent;
+	}
+	.traceLineGray{
+		position:absolute;
+		border:3px solid gray;
+		background:transparent;
+	}
+	.traceLineRed{
+		position:absolute;
+		border:5px solid red;
+		background:transparent;
+	}
+	.traceLineYellow{
+		position:absolute;
+		border:3px solid yellow;
+		background:transparent;
+	}
+ /* 缁撴潫 */
+ 
+ 
+ /* /ita-app/src/webapp/WEB-INF/pages/fhbp/input.jsp */
+ 
+  /* 寮�濮� */
+  
+     /*  /ita-app/src/webapp/WEB-INF/pages/fhbp/zhReview.jsp */
+     
+       /* 寮�濮� */
+ .class1 {
+	width: 100% !important;
+	height: 33px;
+	border: solid 1px #cccccc;
+	line-height: 32px;
+	text-aline: center;
+}
+       /* 缁撴潫 */
+
+.addNewLine {
+	width: 180px;	
+	cursor: pointer;
+	background-color: #4a8cf7;
+	color: #ffffff;
+	font-size: 14px;
+	text-align: center;
+	text-decoration: none;
+}
+
+/* 缁撴潫 */
+/* panel  绠ご鏍峰紡寮�濮� */ 
+.tip-pull-right{
+	padding-top:2px;
+	float:right;
+	text-align: center;
+}
+.fa {
+	line-height: 1; font-family: FontAwesome; font-size: 18px !important; font-style: normal; font-variant: normal; font-weight: normal; display: inline-block; font-size-adjust: none; font-stretch: normal; transform: translate(0, 0); -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; text-rendering: auto;
+}
+.fa-chevron-up::before {
+	content: "\f077";
+}
+.fa-chevron-down::before {
+	content: "\f078";
+}
+ /* panel  绠ご鏍峰紡缁撴潫 */ 
+ 
+ /*   浜哄憳閫夋嫨鍣ㄥ拰鏈烘瀯閫夋嫨鍣ㄦ牱寮�    寮�濮�      */
+ #btnLevelOrg,#btnParentOrg,#btnQueryOrg,#btnLevelUser,#btnParentUser,#btnQueryUser,#btnQueryPst,#btnQuery4Role{
+    margin-left:5px !important;
+ }
+ #btnAllOrg,#btnLevelOrg,#btnParentOrg,#btnQueryOrg,#btnAllUser,#btnLevelUser,#btnParentUser,#userName,#orgName,#btnQueryPst,#btnQuery4Role,#pstName,#userName4Role{
+    border-radius: 4px;
+	-moz-border-radius:4px;
+	-khtml-border-radius:4px;
+	-webkit-border-radius:4px;
+ }
+ /*   浜哄憳閫夋嫨鍣ㄥ拰鏈烘瀯閫夋嫨鍣ㄦ牱寮�    缁撴潫      */
+ .modal-body{
+   padding-top:28px !important;
+ }
+ 
+ /* 浜樉 鍔犵矖 瀛椾綋涓虹孩鑹�*/
+.high-light-show{
+	font-weight: bold;
+	color: red;
+}
+.btn-red{
+	color: #ffffff!important;
+	text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+	background-color: #d9534f !important;
+	background-color: #d9534f!important;
+	background-image: -moz-linear-gradient(top, #0088cc, #0044cc);
+	background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#0088cc), to(#0044cc));
+	background-image: -webkit-linear-gradient(top, #0088cc, #0044cc);
+	background-image: -o-linear-gradient(top, #0088cc, #0044cc);
+	background-image: linear-gradient(to bottom, #0088cc, #0044cc);
+	background-repeat: repeat-x;
+	border-color: #d9534f #d9534f #d9534f;
+	border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff0088cc', endColorstr='#ff0044cc', GradientType=0);
+	filter: progid:DXImageTransform.Microsoft.gradient(enabled=false);
+}
