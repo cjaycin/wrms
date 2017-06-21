@@ -9,18 +9,21 @@ import com.app.util.PageUtils;
 import com.app.vo.BasicInfoVO;
 import com.app.vo.CustomerPageVO;
 import com.app.vo.PagedResultVO;
-import com.sun.org.apache.xpath.internal.operations.Mod;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.ModelMap;
-import org.springframework.web.bind.annotation.*;
-import org.springframework.web.servlet.ModelAndView;
+import org.springframework.web.bind.annotation.ModelAttribute;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.RequestParam;
 
 import javax.servlet.http.HttpServletResponse;
-import java.io.PrintWriter;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
-import java.util.*;
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
 
 /**
  * Created by cjay on 2015/4/15.
@@ -32,9 +35,11 @@ public class BusinessController {
     @Autowired
     private ContractService contractService;
 
-    @RequestMapping(value = "/customer/allContract", method = RequestMethod.POST)
+    @RequestMapping(value = "/contract/allContract", method = RequestMethod.POST)
     public void listAllCustomer(@ModelAttribute("customerPageVO")CustomerPageVO customerPageVO, HttpServletResponse response){
-        PageList customerList = customerService.getCustomerByPage(customerPageVO.getCondition(), customerPageVO.getPage(), customerPageVO.getPageSize());
+        List conditionList = new ArrayList();
+        conditionList.add(customerPageVO.getCondition());
+        PageList customerList = contractService.getContractsByPage(conditionList, customerPageVO.getPage(), customerPageVO.getPageSize());
         PagedResultVO pagedResultVO = PageUtils.getPageResultVO(customerList.getResult(), customerList.getTotalPage());
         Map result = new HashMap();
         result.put("pagedResultVO", pagedResultVO);

@@ -47,7 +47,7 @@ public class UserController {
         else{
             mav.setViewName("success");
             mav.addObject("user", u);
-            return "customer/listCustomers";
+            return "contracts/listContracts";
         }
     }
 

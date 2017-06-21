@@ -101,7 +101,7 @@
             </ul>
             <ul class="nav navbar-nav navbar-right">
                 <li class="dropdown">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">其他<span class="caret"></span></a>
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">菜单<span class="caret"></span></a>
                     <ul class="dropdown-menu" role="menu">
                         <li><a href="/meetingMis/meeting/meetingIndex">Action</a></li>
                         <%--<li><a href="#">Another action</a></li>--%>

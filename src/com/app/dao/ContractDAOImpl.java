@@ -32,19 +32,19 @@ public class ContractDAOImpl extends BaseDAO implements ContractDAO {
         return this.queryForList(sql, pid);
     }
 
-    public PageList getCustomerByPage(List condition, int curPage, int pageSize){
-        StringBuffer sql = new StringBuffer("select * from tbl_c_customer where 1=1");
+    public PageList getContractsByPage(List condition, int curPage, int pageSize){
+        StringBuffer sql = new StringBuffer("select * from tbl_c_contract where 1=1");
         List conditions = new ArrayList();
         if(condition != null && !"".equals(condition) && condition.size() > 0){
             String conStr = "%"+condition.get(0).toString()+"%";
             conditions.add(conStr);
             conditions.add(conStr);
             conditions.add(conStr);
-            conditions.add(conStr);
-            sql.append(" and name like ?")
-                    .append(" or address like ?")
-                    .append(" or mobile like ?")
-                    .append(" or tel like ?");
+//            conditions.add(conStr);
+            sql.append(" and customer_name like ?")
+                    .append(" or customer_address like ?")
+                    .append(" or customer_mobile like ?");
+//                    .append(" or tel like ?");
 //            sql.append(" and name like '%").append(conStr).append("%'")
 //                    .append(" or address like '%").append(conStr).append("%'")
 //                    .append(" or mobile like '%").append(conStr).append("%'")

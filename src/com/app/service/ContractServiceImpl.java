@@ -2,6 +2,7 @@ package com.app.service;
 
 import com.app.dao.ContractDAO;
 import com.app.domain.Contract;
+import com.app.domain.PageList;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -27,4 +28,6 @@ public class ContractServiceImpl implements ContractService{
     public int saveBasicInfo(Contract contract){
         return contractDAO.saveBasicInfo(contract);
     }
+    public PageList getContractsByPage(List condition, int curPage, int pageSize){return contractDAO.getContractsByPage(condition, curPage, pageSize);}
+
 }
