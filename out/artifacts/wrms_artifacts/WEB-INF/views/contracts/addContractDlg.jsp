@@ -5,7 +5,8 @@
   Time: 14:25
   To change this template use File | Settings | File Templates.
 --%>
-<%@ page contentType="text/html; charset=UTF-8" language="java" %>
+<%@ page contentType="text/html; charset=UTF-8" language="java" pageEncoding="UTF-8" %>
+
 <div class="modal fade" id="addContractModal" role="dialog" aria-hidden="true">
   <div class="modal-dialog">
     <div class="modal-content">
@@ -14,7 +15,7 @@
         <h4 class="modal-title" id="myModalLabel">添加订单</h4>
       </div>
       <div class="modal-body">
-        <form class="form-horizontal" id="basicInfoForm" method="post">
+        <form class="form-horizontal" action="/contract/saveBasicInfo" method="post">
           <div class="form-group">
             <div class="col-sm-6">
               <input type="text" class="form-control" id="name" name="name" placeholder="客户姓名">
@@ -119,7 +120,7 @@
               message: '联系地址不能为空'
             }
           }
-        },
+        }
 //        date1: {
 //          validators: {
 //            notEmpty: {
@@ -136,7 +137,7 @@
 //        }
       },
       submitHandler: function (validator, form, submitButton) {
-        $.ajax({
+/*        $.ajax({
           type:"POST",
           url:"/contract/saveBasicInfo",
           data: form.serialize(),
@@ -147,7 +148,7 @@
           error: function(result) {
 //                options.error(result);
           }
-        });
+        })*/;
       }
     });
   }

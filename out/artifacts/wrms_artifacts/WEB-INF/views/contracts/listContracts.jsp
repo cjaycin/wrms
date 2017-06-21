@@ -81,9 +81,9 @@
                 {template: kendo.template($("#meetingGridToolbar").html())},
             ],
             columns: [
-                {field: "name", title: "姓名", width: "22%"},
-                {field: "address", title: "地址", width: "26"},
-                {field: "mobile", title: "手机号码", width: "13%"},
+                {field: "customer_name", title: "姓名", width: "22%"},
+                {field: "customer_address", title: "地址", width: "26"},
+                {field: "customer_mobile", title: "手机号码", width: "13%"},
                 {field: "tel", title: "联系电话", width: "13%"},
 //        {field : "total_price", title: "总额" , width:"13%"},
 //        {field : "status ", title: "状态" , width:"13%"},
@@ -104,7 +104,7 @@
                     read: function (options) {
                         $.ajax({
                             type: "POST",
-                            url: "/customer/allCustomer",
+                            url: "/contract/allContract",
                             data: $("#searchMeetingForm").serialize() + "&page=" + options.data.page + "&pageSize=" + options.data.pageSize,
                             dataType: "json",
                             success: function (result) {
@@ -148,7 +148,7 @@
     }
 
     function editContract(id) {
-        window.location = "/contract/editContract?cid=" + id;
+        window.location = "/contract/editContract?id=" + id;
         /*    $.ajax({
          type:"POST",
          url:"/contract/editContract?cid="+id,

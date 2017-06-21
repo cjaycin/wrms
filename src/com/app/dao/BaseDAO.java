@@ -4,6 +4,7 @@ import com.app.domain.PageList;
 import com.mchange.v1.util.DebugUtils;
 import com.sun.xml.internal.ws.util.UtilException;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.dao.DataAccessException;
 import org.springframework.dao.EmptyResultDataAccessException;
 import org.springframework.jdbc.core.*;
 import org.springframework.jdbc.core.simple.SimpleJdbcDaoSupport;
@@ -12,9 +13,7 @@ import javax.servlet.http.HttpServletResponse;
 import javax.sql.DataSource;
 import java.lang.reflect.Field;
 import java.lang.reflect.Method;
-import java.sql.Connection;
-import java.sql.PreparedStatement;
-import java.sql.SQLException;
+import java.sql.*;
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
 import java.util.*;
@@ -766,4 +765,23 @@ public class BaseDAO {
         jdbcTemplate.update(preparedStatementCreator, keyHolder);
     }
 
+    public String executeProcedure(final String preFix, final int num){
+        String param2Value = (String) this.jdbcTemplate.execute(
+                new CallableStatementCreator() {
+                    public CallableStatement createCallableStatement(Connection con) throws SQLException {
+                        String storedProc = "{call generate_orderNo (?,?,?)}";// 调用的sql
+                        CallableStatement cs = con.prepareCall(storedProc);
+                        cs.setString(1, preFix);// 设置输入参数的值
+                        cs.setInt(2, num);// 设置输入参数的值
+                        cs.registerOutParameter(3,Types.VARCHAR);// 注册输出参数的类型
+                        return cs;
+                    }
+                }, new CallableStatementCallback() {
+                    public Object doInCallableStatement(CallableStatement cs) throws SQLException, DataAccessException {
+                        cs.execute();
+                        return cs.getString(3);// 获取输出参数的值
+                    }
+                });
+        return  param2Value;
+    }
 }

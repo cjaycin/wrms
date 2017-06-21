@@ -14,4 +14,5 @@ public interface ContractDAO {
     public List getItemsByPid(long pid);
     public int saveBasicInfo(Contract contract);
     public PageList getContractsByPage(List condition, int curPage, int pageSize);
+    public List getContractById(long id);
 }

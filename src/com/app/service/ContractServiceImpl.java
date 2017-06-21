@@ -29,5 +29,5 @@ public class ContractServiceImpl implements ContractService{
         return contractDAO.saveBasicInfo(contract);
     }
     public PageList getContractsByPage(List condition, int curPage, int pageSize){return contractDAO.getContractsByPage(condition, curPage, pageSize);}
-
+    public List getContractById(long id){return contractDAO.getContractById(id);}
 }

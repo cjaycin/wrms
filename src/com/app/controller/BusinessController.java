@@ -18,6 +18,7 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 
 import javax.servlet.http.HttpServletResponse;
+import java.io.UnsupportedEncodingException;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
@@ -54,7 +55,9 @@ public class BusinessController {
     }
 
     @RequestMapping("/contract/editContract")
-    public String showCustomer(ModelMap modelMap,@RequestParam int cid){
+    public String showCustomer(ModelMap modelMap,@RequestParam int id){
+        List contractList = contractService.getContractById(id);
+        modelMap.addAttribute("contract",contractList.get(0));
 //        List customerList = customerService.getCustomerById(cid);
 //        if (customerList!=null && customerList.size()>0){
 //            modelMap.addAttribute("customer",customerList.get(0));
@@ -82,25 +85,26 @@ public class BusinessController {
     }
 
     /**
-     * 保存订单基本信息
+     * 淇濆瓨璁㈠崟鍩烘湰淇℃伅
      */
     @RequestMapping(value = "/contract/saveBasicInfo", method = RequestMethod.POST)
-    public void saveBasicInfo(@ModelAttribute("BasicInfoVo")BasicInfoVO basicInfoVO, HttpServletResponse response) throws ParseException {
+    public String saveBasicInfo(@ModelAttribute("BasicInfoVo")BasicInfoVO basicInfoVO, HttpServletResponse response) throws ParseException, UnsupportedEncodingException {
         SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd");
         Contract contract = new Contract();
-        contract.setCustomerName(basicInfoVO.getName());
+        contract.setCustomerName(new String(basicInfoVO.getName().getBytes("ISO-8859-1"),"utf-8"));
         contract.setCustomerMobile(basicInfoVO.getMobile());
-        contract.setCustmoerAddress(basicInfoVO.getAddress());
+        contract.setCustmoerAddress(new String(basicInfoVO.getAddress().getBytes("ISO-8859-1"), "utf-8"));
         contract.setHdate(sdf.parse(basicInfoVO.getDate1()));
         contract.setJdate(sdf.parse(basicInfoVO.getDate2()));
         int id = contractService.saveBasicInfo(contract);
-        String jsonObject = JSONObject.toJSONString(id);
+        /*String jsonObject = JSONObject.toJSONString(id);
         try {
             response.setContentType("text/json; charset=utf-8");
             response.setCharacterEncoding("utf-8");
             response.getWriter().print(jsonObject);
         } catch (Exception e){
             e.printStackTrace();
-        }
+        }*/
+        return "contracts/listContracts";
     }
 }
